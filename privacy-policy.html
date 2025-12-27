@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Stock Market Today Chrome Extension - Learn how we protect your privacy and handle data.">
+    <meta name="keywords" content="privacy policy, stock market today, chrome extension, data privacy">
+    <title>Privacy Policy - Stock Market Today Extension</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: #f9fafb;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 18px;
+            opacity: 0.95;
+        }
+
+        .content {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .last-updated {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #92400e;
+        }
+
+        h2 {
+            color: #1f2937;
+            font-size: 28px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        h3 {
+            color: #374151;
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #4b5563;
+            font-size: 16px;
+        }
+
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #4b5563;
+        }
+
+        .highlight-box {
+            background: #e8f4f8;
+            border-left: 4px solid #3b82f6;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 6px;
+        }
+
+        .highlight-box h3 {
+            color: #1e40af;
+            margin-top: 0;
+        }
+
+        .warning-box {
+            background: #fee2e2;
+            border-left: 4px solid #ef4444;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 6px;
+        }
+
+        .success-box {
+            background: #d1fae5;
+            border-left: 4px solid #10b981;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 6px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .data-table th {
+            background: #f3f4f6;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .data-table td {
+            padding: 15px;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .icon-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .icon-list li {
+            padding: 10px 0;
+            padding-left: 35px;
+            position: relative;
+        }
+
+        .icon-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .icon-list.negative li:before {
+            content: "✗";
+            color: #ef4444;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e5e7eb;
+            text-align: center;
+            color: #6b7280;
+        }
+
+        .contact-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        .toc {
+            background: #f9fafb;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            color: #1f2937;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .toc li {
+            padding: 8px 0;
+        }
+
+        .toc a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 30px 20px;
+            }
+            .header h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📋 Privacy Policy</h1>
+            <p>Stock Market Today Chrome Extension</p>
+        </div>
+
+        <div class="content">
+            <div class="last-updated">
+                <strong>Last Updated:</strong> December 28, 2025
+            </div>
+
+            <div class="toc">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#introduction">1. Introduction</a></li>
+                    <li><a href="#data-collection">2. Data Collection</a></li>
+                    <li><a href="#permissions">3. Permissions Explained</a></li>
+                    <li><a href="#third-party">4. Third-Party Services</a></li>
+                    <li><a href="#google-compliance">5. Google API Services User Data Policy</a></li>
+                    <li><a href="#data-security">6. Data Security</a></li>
+                    <li><a href="#user-control">7. User Control</a></li>
+                    <li><a href="#children">8. Children's Privacy</a></li>
+                    <li><a href="#changes">9. Changes to This Policy</a></li>
+                    <li><a href="#contact">10. Contact Information</a></li>
+                </ul>
+            </div>
+
+            <section id="introduction">
+                <h2>1. Introduction</h2>
+                <p>
+                    Stock Market Today ("we", "our", "the extension") is a Chrome extension designed to provide real-time 
+                    stock market information to users. We are committed to protecting your privacy and being transparent 
+                    about our data practices.
+                </p>
+                <div class="success-box">
+                    <h3>Privacy-First Approach</h3>
+                    <p><strong>We DO NOT collect, store, transmit, or sell any personal information.</strong></p>
+                </div>
+            </section>
+
+            <section id="data-collection">
+                <h2>2. Data Collection</h2>
+                
+                <h3>2.1 What We Access</h3>
+                <ul class="icon-list">
+                    <li><strong>Public Financial Market Data:</strong> The extension fetches publicly available stock market data from Yahoo Finance API</li>
+                    <li><strong>Local Storage:</strong> Cached market data is stored locally on your device for faster loading and offline access</li>
+                </ul>
+
+                <h3>2.2 What We DO NOT Collect</h3>
+                <ul class="icon-list negative">
+                    <li>Personal identification information (name, email, phone number)</li>
+                    <li>Browsing history or website visits</li>
+                    <li>Cookies from other websites</li>
+                    <li>Login credentials or passwords</li>
+                    <li>Payment or financial account information</li>
+                    <li>Geographic location or IP address</li>
+                    <li>Camera, microphone, or device sensors</li>
+                    <li>Contacts, calendar, or personal files</li>
+                    <li>User behavior analytics or tracking data</li>
+                </ul>
+
+                <h3>2.3 Data Storage</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Data Type</th>
+                            <th>Storage Location</th>
+                            <th>Duration</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Stock Prices</td>
+                            <td>Local Device Only</td>
+                            <td>5 minutes</td>
+                            <td>Performance optimization</td>
+                        </tr>
+                        <tr>
+                            <td>Market Indices</td>
+                            <td>Local Device Only</td>
+                            <td>5 minutes</td>
+                            <td>Quick data access</td>
+                        </tr>
+                        <tr>
+                            <td>Last Update Timestamp</td>
+                            <td>Local Device Only</td>
+                            <td>Until next refresh</td>
+                            <td>Display freshness</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="permissions">
+                <h2>3. Permissions Explained</h2>
+                <p>
+                    Chrome requires us to declare permissions. Here's exactly why we need each one and how we use them:
+                </p>
+
+                <div class="highlight-box">
+                    <h3>Storage Permission</h3>
+                    <p><strong>What it allows:</strong> Saving data locally on your device using Chrome's Storage API</p>
+                    <p><strong>Why we need it:</strong> To cache stock market data temporarily for improved performance and offline access</p>
+                    <p><strong>What we store:</strong></p>
+                    <ul>
+                        <li>Stock symbols (e.g., AAPL, MSFT, ^GSPC)</li>
+                        <li>Current stock prices</li>
+                        <li>Price changes and percentages</li>
+                        <li>Timestamp of last data fetch</li>
+                    </ul>
+                    <p><strong>Access:</strong> Only this extension can access this data. It stays on your device and is never transmitted to us or any third party.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Host Permission: query1.finance.yahoo.com</h3>
+                    <p><strong>What it allows:</strong> Making API requests to Yahoo Finance servers</p>
+                    <p><strong>Why we need it:</strong> To fetch real-time stock market data from Yahoo Finance's public API</p>
+                    <p><strong>Data sent:</strong> Only stock ticker symbols (e.g., AAPL, GOOGL, ^GSPC)</p>
+                    <p><strong>Data received:</strong> Public market data including prices, changes, and trading volumes</p>
+                    <p><strong>Frequency:</strong> Every 5 minutes when the extension is active, or when you manually refresh</p>
+                </div>
+            </section>
+
+            <section id="third-party">
+                <h2>4. Third-Party Services</h2>
+
+                <h3>4.1 Yahoo Finance API</h3>
+                <p>
+                    We use Yahoo Finance's public API to retrieve stock market data. This is publicly available information 
+                    that anyone can access.
+                </p>
+                <ul>
+                    <li><strong>Service Provider:</strong> Yahoo (Verizon Media)</li>
+                    <li><strong>Data Accessed:</strong> Public stock prices and market indices</li>
+                    <li><strong>Personal Data Shared:</strong> None</li>
+                    <li><strong>Privacy Policy:</strong> <a href="https://www.verizonmedia.com/policies/us/en/verizonmedia/privacy/index.html" target="_blank" rel="noopener noreferrer">Yahoo Privacy Policy</a></li>
+                </ul>
+
+                <h3>4.2 Alpha57.com</h3>
+                <p>
+                    The extension includes a link to Alpha57.com for additional market analysis. This is a standard 
+                    hyperlink that opens in a new browser tab.
+                </p>
+                <ul>
+                    <li><strong>Automatic Data Sharing:</strong> None - data is only shared if you click the link</li>
+                    <li><strong>What Happens:</strong> Clicking opens Alpha57.com in a new tab like any website link</li>
+                    <li><strong>Privacy Policy:</strong> Alpha57.com's privacy policy applies when you visit their website</li>
+                </ul>
+
+                <h3>4.3 No Analytics or Tracking</h3>
+                <div class="success-box">
+                    <p>
+                        <strong>We do NOT use:</strong>
+                    </p>
+                    <ul class="icon-list negative">
+                        <li>Google Analytics or any analytics services</li>
+                        <li>Third-party advertising networks</li>
+                        <li>Tracking pixels or beacons</li>
+                        <li>Social media plugins that track users</li>
+                        <li>Error reporting services that collect personal data</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="google-compliance">
+                <h2>5. Google API Services User Data Policy Compliance</h2>
+                <p>
+                    Our use of information received from Google APIs adheres to the 
+                    <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">
+                        Google API Services User Data Policy
+                    </a>, including the Limited Use requirements.
+                </p>
+
+                <div class="highlight-box">
+                    <h3>Chrome APIs Used</h3>
+                    <p>This extension uses the following Chrome APIs:</p>
+                    <ul>
+                        <li><strong>chrome.storage:</strong> For local data caching only</li>
+                        <li><strong>chrome.runtime:</strong> For extension lifecycle management</li>
+                        <li><strong>chrome.tabs:</strong> Only to open Alpha57.com on first install</li>
+                    </ul>
+                </div>
+
+                <h3>5.1 Limited Use Policy Compliance</h3>
+                <p>We certify that:</p>
+                <ul class="icon-list">
+                    <li>We only request permissions that are critical to the extension's core functionality</li>
+                    <li>We do not transfer user data to third parties except as necessary to provide the service</li>
+                    <li>We do not use user data for serving advertisements</li>
+                    <li>We do not allow humans to read user data, except with explicit user consent or as required by law</li>
+                    <li>All data handling is transparent and disclosed in this privacy policy</li>
+                </ul>
+
+                <h3>5.2 Data Handling Certification</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Requirement</th>
+                            <th>Our Compliance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Transparent privacy disclosures</td>
+                            <td>✓ This comprehensive privacy policy</td>
+                        </tr>
+                        <tr>
+                            <td>Limited data collection</td>
+                            <td>✓ Only public market data, no personal info</td>
+                        </tr>
+                        <tr>
+                            <td>Secure data handling</td>
+                            <td>✓ All data stored locally, encrypted by Chrome</td>
+                        </tr>
+                        <tr>
+                            <td>No sale of user data</td>
+                            <td>✓ No data collection means nothing to sell</td>
+                        </tr>
+                        <tr>
+                            <td>No use for advertising</td>
+                            <td>✓ Extension contains zero ads</td>
+                        </tr>
+                        <tr>
+                            <td>No unauthorized transfer</td>
+                            <td>✓ No data leaves your device</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>5.3 Chrome Web Store Developer Program Policies</h3>
+                <p>
+                    This extension complies with all 
+                    <a href="https://developer.chrome.com/docs/webstore/program-policies/" target="_blank" rel="noopener noreferrer">
+                        Chrome Web Store Developer Program Policies
+                    </a>:
+                </p>
+                <ul class="icon-list">
+                    <li><strong>Single Purpose:</strong> Real-time stock market data tracking</li>
+                    <li><strong>Minimal Permissions:</strong> Only storage and Yahoo Finance API access</li>
+                    <li><strong>User Privacy:</strong> Zero personal data collection</li>
+                    <li><strong>Security:</strong> No code obfuscation, all code is reviewable</li>
+                    <li><strong>Deceptive Behavior:</strong> Transparent about all features and permissions</li>
+                </ul>
+            </section>
+
+            <section id="data-security">
+                <h2>6. Data Security</h2>
+                <p>
+                    While we don't collect personal data, we still implement security best practices:
+                </p>
+
+                <h3>6.1 Technical Measures</h3>
+                <ul class="icon-list">
+                    <li><strong>Local Storage Only:</strong> All cached data stays on your device</li>
+                    <li><strong>No Remote Servers:</strong> We don't operate servers that store user data</li>
+                    <li><strong>HTTPS Only:</strong> All API calls use secure HTTPS connections</li>
+                    <li><strong>Chrome Sandboxing:</strong> Extension runs in Chrome's security sandbox</li>
+                    <li><strong>Content Security Policy:</strong> Prevents unauthorized code execution</li>
+                </ul>
+
+                <h3>6.2 Code Transparency</h3>
+                <ul class="icon-list">
+                    <li>No code obfuscation - all JavaScript is readable</li>
+                    <li>Open for review by Chrome Web Store security team</li>
+                    <li>Minimal external dependencies</li>
+                    <li>Regular security updates</li>
+                </ul>
+            </section>
+
+            <section id="user-control">
+                <h2>7. User Control</h2>
+                <p>You have complete control over the extension and your data:</p>
+
+                <h3>7.1 Managing the Extension</h3>
+                <ul>
+                    <li><strong>Disable:</strong> Go to chrome://extensions/ and toggle the extension off</li>
+                    <li><strong>Remove:</strong> Click "Remove" to uninstall completely</li>
+                    <li><strong>Review Permissions:</strong> View all permissions on the extensions page</li>
+                </ul>
+
+                <h3>7.2 Data Management</h3>
+                <ul>
+                    <li><strong>Clear Cache:</strong> Uninstalling the extension removes all cached data</li>
+                    <li><strong>View Storage:</strong> Use Chrome DevTools to inspect local storage</li>
+                    <li><strong>Prevent Storage:</strong> Disable the extension to stop data caching</li>
+                </ul>
+
+                <h3>7.3 Your Rights</h3>
+                <div class="highlight-box">
+                    <p>Under applicable data protection laws, you have the right to:</p>
+                    <ul>
+                        <li>Know what data is collected (disclosed in this policy)</li>
+                        <li>Access your data (view Chrome local storage)</li>
+                        <li>Delete your data (uninstall extension)</li>
+                        <li>Opt-out completely (uninstall extension)</li>
+                        <li>Request information (contact us via Alpha57.com)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="children">
+                <h2>8. Children's Privacy</h2>
+                <p>
+                    This extension is designed for adults interested in financial markets. We do not knowingly collect 
+                    information from children under 13 years of age.
+                </p>
+                <p>
+                    If you are a parent or guardian and believe your child has provided information through this extension, 
+                    please contact us immediately so we can address the issue.
+                </p>
+                <div class="warning-box">
+                    <p>
+                        <strong>COPPA Compliance:</strong> This extension complies with the Children's Online Privacy 
+                        Protection Act (COPPA) by not collecting any personal information from users of any age.
+                    </p>
+                </div>
+            </section>
+
+            <section id="changes">
+                <h2>9. Changes to This Policy</h2>
+                <p>
+                    We may update this privacy policy to reflect changes in our practices or legal requirements. When we 
+                    make changes:
+                </p>
+                <ul>
+                    <li>The "Last Updated" date at the top will be revised</li>
+                    <li>Significant changes will be highlighted in the extension update notes</li>
+                    <li>Continued use after changes constitutes acceptance of the updated policy</li>
+                    <li>Users can always access the current policy at this URL</li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2>10. Contact Information</h2>
+                <p>
+                    If you have questions, concerns, or requests regarding this privacy policy or our data practices, 
+                    please contact us:
+                </p>
+                <div class="highlight-box">
+                    <p><strong>Website:</strong> <a href="https://www.alpha57.com" target="_blank" rel="noopener noreferrer" class="contact-link">https://www.alpha57.com</a></p>
+                    <p><strong>Extension Support:</strong> Through Chrome Web Store reviews or Alpha57 contact page</p>
+                    <p><strong>Response Time:</strong> We aim to respond within 48 hours</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Summary</h2>
+                <div class="success-box">
+                    <p><strong>In Plain English:</strong></p>
+                    <p>
+                        Stock Market Today is a simple extension that shows you stock market data. It only accesses 
+                        public stock prices from Yahoo Finance and temporarily saves them on your computer for faster 
+                        loading. We don't collect any information about you, we don't track you, and we don't show ads. 
+                        Your privacy is completely protected.
+                    </p>
+                </div>
+            </section>
+
+            <div class="footer">
+                <p><strong>Stock Market Today Chrome Extension</strong></p>
+                <p>Committed to your privacy and security</p>
+                <p>Visit: <a href="https://www.alpha57.com" target="_blank" rel="noopener noreferrer" class="contact-link">Alpha57.com</a></p>
+                <p style="margin-top: 20px; font-size: 14px;">
+                    © 2025 Stock Market Today Extension. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
